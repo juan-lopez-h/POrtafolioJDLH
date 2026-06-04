@@ -14,13 +14,23 @@ function App() {
       <h1 className="nombre ">Hola, soy Juan David Lopez Hernandez</h1>
       <p>Desarrollador backend con experiencia en Node.js, Java con springboot y Express</p>
       <article className="skills">
-        <button className='btn' >
+        <button className='btn' onClick={() => setModalOpen(true)}>
         <p>Contactame</p>
       </button>
       <button className='btn2' >
         <p>Mis proyectos</p>
       </button>
       </article>
+      {
+        modalOpen && (
+          <div className="modal" onClick={() => setModalOpen(false)} >
+            <div className="modal" onClick={e => e.stopPropagation()}>
+            <button className="modal-close" onClick={() => setModalOpen(false)}>✕</button>
+            <h2>Contáctame</h2>
+            <p>juandavid@email.com</p>
+          </div>
+          </div>
+      )}
     </article>
     </div>
   )
