@@ -5,7 +5,7 @@ import heroImg from './assets/hero.png'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [modalOpen, setModalOpen] = useState(false)
 
   return (
     <div className="App">
@@ -23,14 +23,14 @@ function App() {
       </article>
       {
         modalOpen && (
-          <div className="modal" onClick={() => setModalOpen(false)} >
-            <div className="modal" onClick={e => e.stopPropagation()}>
-            <button className="modal-close" onClick={() => setModalOpen(false)}>✕</button>
-            <h2>Contáctame</h2>
-            <p>juandavid@email.com</p>
-          </div>
-          </div>
-      )}
+      <div className="modal-overlay" onClick={() => setModalOpen(false)}>
+        <div className="modal" onClick={e => e.stopPropagation()}>
+          <button className="modal-close" onClick={() => setModalOpen(false)}>✕</button>
+          <h2>Contáctame</h2>
+          <p>juanlopezcastillooo@gmail.com</p>
+        </div>
+      </div>
+)}
     </article>
     </div>
   )
