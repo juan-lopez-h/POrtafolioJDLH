@@ -10,12 +10,12 @@ function App() {
   return (
     <div className="App">
     <article className="app">
-      <h2 className='developer'>Backend developer junior</h2>
+      <h2 className='developer'>Backend Developer | Java & Spring Boot</h2>
       <h1 className="nombre ">Hola, soy Juan David Lopez Hernandez</h1>
       <p className="description">
-        Desarrollador Backend especializado en Java, Spring Boot,
-        Node.js y Express. Construyo APIs REST, sistemas empresariales
-        y soluciones enfocadas en resolver necesidades reales de negocio.
+        Construyo APIs REST, sistemas empresariales
+        y soluciones enfocadas en resolver necesidades
+        reales de negocio.
       </p>
       <div className="tech-stack">
         <span>Java</span>
@@ -29,7 +29,7 @@ function App() {
         <button className='btn' onClick={() => setModalOpen(true)}>
         <p>Contactame</p>
       </button>
-      <button className='btn2' >
+      <button className='btn2' onClick={() => window.open('https://github.com/juan-lopez-h?tab=repositories', '_blank')}>
         <p>Mis proyectos</p>
       </button>
       </article>
@@ -71,6 +71,14 @@ function App() {
         className="contact-btn"
       >
         💼 LinkedIn
+      </a>
+      <a
+        href="https://www.instagram.com/juan.da312/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="contact-btn"s
+      >
+        Instagram
       </a>
     </div>
   </div>
