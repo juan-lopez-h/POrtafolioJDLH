@@ -24,6 +24,9 @@ function App() {
         <span>PostgreSQL</span>
         <span>MongoDB</span>
         <span>Docker</span>
+        <span>Git</span>
+        <span>Linux</span>
+        <span>python</span>
       </div>
       <article className="skills">
         <button className='btn' onClick={() => setModalOpen(true)}>
@@ -76,7 +79,7 @@ function App() {
         href="https://www.instagram.com/juan.da312/"
         target="_blank"
         rel="noopener noreferrer"
-        className="contact-btn"s
+        className="contact-btn"
       >
         Instagram
       </a>
