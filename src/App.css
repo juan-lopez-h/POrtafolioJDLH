@@ -21,13 +21,15 @@ body {
   align-items: left;
   margin-bottom: 0.5rem;
 }
-.btn{
+.btn, .btn2 {
   background-color: transparent;
   border: 1px solid #968fdb;
   color: #968fdb;
-  padding: 0.5rem 1rem;
+   padding: 12px 24px;
   cursor: pointer;
   margin-top: 1rem;
+  margin-right: 2rem;
+   transition: .2s ease;
 }
 .nombre{
   color: #E2E8F0;
@@ -41,15 +43,7 @@ body {
   min-height: 100vh;
   background-color: #0D0F1A;
 }
-.btn2{
-   background-color: transparent;
-  color: #968fdb;
-  border: 1px solid #968fdb;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  margin-top: 1rem;
-  margin: 3rem;
-}
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -62,12 +56,14 @@ body {
   justify-content: center;
 }
 .modal {
-  background-color: #0D0F1A;
+  width: 90%;
+  max-width: 400px;
+
+  background-color: #161b22;
   padding: 2rem;
-  border-radius: 8px;
+  border-radius: 12px;
+
   position: relative;
-  width: 300px;
-  text-align: center;
 }
 h2 {
   color: #64FFDA;
@@ -127,4 +123,34 @@ h2 {
   border-radius: 999px;
   font-size: 0.9rem;
   font-weight: 500;
+}
+@media (max-width: 768px) {
+
+  .app {
+    padding: 1rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .skills {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn,
+  .btn2 {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .tech-stack {
+    gap: 8px;
+  }
+
+  .tech-stack span {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
 }
