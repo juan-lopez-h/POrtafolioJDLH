@@ -83,6 +83,16 @@ function App() {
       >
         Instagram
       </a>
+      
+      <a
+        Ultima pagina web creada para un cliente 
+        href="https://ferreteria-la-promo-web.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="contact-btn"
+        >
+        Ferreteria la promoH&C
+      </a>
     </div>
   </div>
 </div>
